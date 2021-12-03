@@ -1,0 +1,31 @@
+
+<!DOCTYPE html>
+<html lang="es" ng-app="MyApp">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Course AngularJS</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+
+</head>
+<body ng-controller="FirstController">
+
+    <input type="Enter your name" ng-model="name">
+
+    <h1>Hello {{ name }}!</h1>
+
+
+    <ul>
+        <li ng-repeat="comment in comments">
+            {{ comment.description }} - <strong>{{ comment.username }}</strong>
+        </li>
+    </ul>
+
+
+    {{ 2 + 5 }}
+
+    <script src="./main.js"></script>
+
+</body>
+</html>
