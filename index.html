@@ -11,7 +11,9 @@
 </head>
 <body ng-controller="FirstController">
 
-    <input type="Enter your name" ng-model="name">
+    <input type="Enter your comment" ng-model="newComment.description">
+    <input type="Enter your username" ng-model="newComment.username">
+    <input type="submit" value="Enviar" ng-click="addComment()">
 
     <h1>Hello {{ name }}!</h1>
 
